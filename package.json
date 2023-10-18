@@ -1,12 +1,36 @@
 {
+  "name": "pwa-text-editor",
+  "version": "1.0.0",
+  "description": "Progressive Web Application Text Editor",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server/server.js",
+    "dev": "webpack --watch",
+    "prestart": "npm run build",
+    "build": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "pwa",
+    "text editor"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.23.2",
-    "@babel/preset-env": "^7.23.2",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^6.8.1",
-    "express": "^4.18.2",
-    "idb": "^7.1.1",
-    "style-loader": "^3.3.3",
-    "workbox-precaching": "^7.0.0"
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "idb": "^6.1.2",
+    "workbox-precaching": "^6.2.4"
   }
 }
