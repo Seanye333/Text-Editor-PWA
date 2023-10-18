@@ -1,0 +1,16 @@
+# Node.js dependencies
+node_modules
+
+# Built files
+/dist
+/public/bundle.js
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Operating System Files
+.DS_Store
+
+# Environment configuration
+.env
